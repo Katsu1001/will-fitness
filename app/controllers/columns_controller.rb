@@ -2,6 +2,7 @@ class ColumnsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
   def index
+    @columns = Column.all.order("created_at DESC")
   end
 
   def new
