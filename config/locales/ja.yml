@@ -10,6 +10,7 @@ ja:
         birthday: 誕生日
       column:
         name: タイトル
-        introduction: 詳細
+        conclusion: 結論
+        reference: 参考にしたもの
         category_id: ジャンル
         part_id: トレーニングの部位

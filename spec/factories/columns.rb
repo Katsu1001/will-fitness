@@ -3,7 +3,8 @@ FactoryBot.define do
     association :user
 
     name              {'test'}
-    introduction      {'説明書き'}
+    conclusion        {'説明書き'}
+    reference         {'説明書き'}
     category_id       {1}
     part_id           {1}
   

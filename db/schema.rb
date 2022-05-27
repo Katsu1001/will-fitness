@@ -40,7 +40,9 @@ ActiveRecord::Schema.define(version: 2022_05_27_080242) do
 
   create_table "columns", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
-    t.text "introduction", null: false
+    t.text "conclusion", null: false
+    t.text "reason"
+    t.text "reference", null: false
     t.integer "category_id", null: false
     t.integer "part_id", null: false
     t.bigint "user_id", null: false
