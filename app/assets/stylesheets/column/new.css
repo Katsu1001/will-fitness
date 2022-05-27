@@ -31,7 +31,7 @@
 
 /* 共通 */
 .indispensable {
-  background: #e29118;
+  background: #ff8c00;
   margin-left: 8px;
   padding: 3px;
   border-radius: 2px;
@@ -182,8 +182,8 @@
 }
 
 .sell-btn {
-  background: #e29118;
-  border: 1px solid #e29118;
+  background: #ff8c00;
+  border: 1px solid #ff8c00;
   color: #fff;
   width: 100%;
   height: 50px;
