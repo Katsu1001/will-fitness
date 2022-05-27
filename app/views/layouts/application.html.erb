@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WillFitness</title>
+    <title>Will</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/2ec2a30cc1.js" crossorigin="anonymous"></script> 
   </head>
 
   <body>
+    <div class="h-100 d-flex flex-column" style="min-height">
+      <div class="head_blank">
+        <%= render 'layouts/notifications' %>
+        <%= render partial: "shared/modal" %>
+      </div>
+    </div>
+
     <%= yield %>
+
   </body>
 </html>

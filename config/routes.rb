@@ -1,3 +1,20 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
+  root to:'toppages#index'
+
+  get 'users/index'
+  get 'toppages/index'
+
+  resources :toppages, only: :index do
+    collection do
+      get 'privacy_policy'
+      get 'regulation'
+      get 'contact_us'
+      get 'administrator_info'
+    end
+  end
+
+  resources :users do
+  end
+
 end
