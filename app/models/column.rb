@@ -11,7 +11,8 @@ class Column < ApplicationRecord
   
   with_options presence: true do
     validates :name
-    validates :introduction
+    validates :conclusion
+    validates :reference
     validates :category_id
     validates :part_id
   end

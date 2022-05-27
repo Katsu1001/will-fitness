@@ -33,24 +33,23 @@
           結論
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :introduction, class:"items-text", id:"item-info", placeholder:"伝えたいことはなんですか？
+        <%= f.text_area :conclusion, class:"items-text", id:"item-info", placeholder:"伝えたいことはなんですか？
 【例】腹筋のトレーニングは、他の筋肉と同様に週2回を目標に実施すると良いとされています。腹筋は特別な筋肉ではない為、適度に休養を取ることが最終的にボディメイクの成功する近道となります。" ,rows:"10" ,maxlength:"1000000" %>
       </div>
       <div class="items-explain">
         <div class="weight-bold-text">
           理由
-          <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :introduction, class:"items-text", id:"item-info", placeholder:"なぜそのようなことが考られるのですか？ 
+        <%= f.text_area :reason, class:"items-text", id:"item-info", placeholder:"なぜそのようなことが考られるのですか？ 
 (※特にない場合は、「特になし」と入力してください。)
-【例】確かに、遅筋優位な筋肉は低負荷・高回数で頻度を高めにした方が発達しやすいです。しかし、腹筋の筋繊維比率は速筋が54%, 遅筋が46%で速筋優位である為、特に腹筋が高回数に反応しやすい部位であるという訳ではないです。腹筋も物理的刺激を狙った高重量種目と化学的刺激を狙った低重量種目を組み合わせてトレーニングをしていくと良いです。" ,rows:"30" ,maxlength:"1000000" %>
+【例】確かに、遅筋優位な筋肉は低負荷・高回数で頻度を高めにした方が発達しやすいです。しかし、腹筋の筋繊維比率は速筋が54%, 遅筋が46%で速筋優位である為、特に腹筋が高回数に反応しやすい部位であるという訳ではないです。腹筋も物理的刺激を狙った高重量種目と化学的刺激を狙った低重量種目を組み合わせてトレーニングをしていくと良いです。" ,rows:"20" ,maxlength:"1000000" %>
       </div>
       <div class="items-explain">
         <div class="weight-bold-text">
           参考にしたもの
           <span class="indispensable">必須</span>
         </div>
-        <%= f.text_area :introduction, class:"items-text", id:"item-info", placeholder:"参考にした動画や論文、ニュースのURLなどがあれば入力してください。
+        <%= f.text_area :reference, class:"items-text", id:"item-info", placeholder:"参考にした動画や論文、ニュースのURLなどがあれば入力してください。
 (※特にない場合は、「特になし」と入力してください。)
 【例】1.スクワット中の腹直筋の筋活動
 Aspe RR, Swinton PA. Electromyographic and kinetic comparison of the back squat and overhead squat. J Strength Cond Res. 2014 Oct;28(10):2827-36. doi: 10.1519/JSC.0000000000000462. PMID: 24662228.

@@ -11,10 +11,15 @@ RSpec.describe Column, type: :model do
         @column.valid?
         expect(@column.errors.full_messages).to include("タイトルを入力してください")
       end
-      it "introductionが空だと登録できない" do
-        @column.introduction = ''
+      it "conclusionが空だと登録できない" do
+        @column.conclusion = ''
         @column.valid?
-        expect(@column.errors.full_messages).to include("詳細を入力してください")
+        expect(@column.errors.full_messages).to include("結論を入力してください")
+      end
+      it "referenceが空だと登録できない" do
+        @column.reference = ''
+        @column.valid?
+        expect(@column.errors.full_messages).to include("参考にしたものを入力してください")
       end
       it "category_idが--だと登録できない" do
         @column.category_id = 0
