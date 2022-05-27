@@ -24,7 +24,7 @@ class ColumnsController < ApplicationController
 
   private
   def column_params
-    params.require(:column).permit(:name, :conclusion, :reference, :category_id, :part_id, :image).merge(user_id: current_user.id)
+    params.require(:column).permit(:name, :conclusion, :reason, :reference, :category_id, :part_id, :image).merge(user_id: current_user.id)
   end
 
   def set_item
