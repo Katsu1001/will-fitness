@@ -1,2 +1,109 @@
-<h1>Toppages#index</h1>
-<p>Find me in app/views/toppages/index.html.erb</p>
+<%= render "shared/header" %>
+
+<div class='main'>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      Will
+    </h2>
+    <p class='service-explain'>
+      About Our Service
+    </p>
+    <p class='service-explain'>
+      Willはトレーニングを愛する全ての人のライフスタイルを総合的にサポートするメディアです。<br>
+      男性でも女性でも、初心者でも上級者でもお楽しみ頂けるコンテンツをお届け致します。
+    </p>
+    <div class='store-btn'>
+      <%= link_to image_tag("app-store.svg", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("google-play.png", class:"google-btn"), "#" %>
+    </div>
+  </div>
+
+  <div class='feature-contents'>
+    <h2 class='title'>
+      Willによって解決したい問題
+    </h2>
+    <ul class='feature-lists'>
+      <li class='list'>
+        <%= image_tag "outcome.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          成果が出ない...
+        </h3>
+        <p class='feature-list-description'>
+          自分専用のメニューに取り組むので成果に繋がりやすいです！<br>
+          さらに、自分が行ったメニューや成果を記録すれば、より日々の成長を感じることができます！
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "Targets.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          目標が定まらない...
+        </h3>
+        <p class='feature-list-description'>
+          コラムに毎日更新される情報から、体づくりのために必要な情報を知ることができます。<br>
+          今やっている種目がどこを刺激して、どんな作用をするものなのかが分かるようになります！
+        </p>
+      </li>
+      <li class='list'>
+        <%= image_tag "sub_group.png", class:"list-pict" %>
+        <h3 class='feature-list-text'>
+          ひとりだと頑張れない...
+        </h3>
+        <p class='feature-list-description'>
+          同じ想いを持つ仲間を作ってお互いに励まし合うことで、ひとりではなくみんなで一つの目標に向かって頑張れます！
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <div class='item-contents'>
+    <h2 class='title'>最近の情報</h2>
+    <div class="subtitle" >
+      <p>トレーニング・食事・サプリメント等、必要な情報は全てここから</p>
+    </div>
+    <ul class='item-lists'>
+
+      <%  if @columns.present? %>
+        <% @columns.each do |column| %>
+          <li class='list'>
+            <%= link_to root_path do %>
+            <div class='item-img-content' >
+              <%= image_tag column.image, class: "item-img" %>
+            </div>
+            <div class='item-info'>
+              <h3 class='item-name'>
+                <%= column.name %>
+              </h3>
+            </div>
+            <div class='item-price'>
+              <span><%= column.category.name %></span>
+              <div class='star-btn'>
+                <%= image_tag "star.png", class:"star-icon" %>
+                <span class='star-count'></span>
+              </div>
+            </div>
+          </div>
+        <% end %>
+          </li>
+        <% end %>
+      <% else %>
+        <li class='list'>
+          <%= link_to root_path do %>
+          <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
+          <div class='item-info'>
+            <h3 class='item-name'>
+              体づくりの情報を投稿してね
+            </h3>
+          </div>
+        <% end %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
+
+<%= link_to("#", class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>分析する</span>
+  <%= image_tag 'push.logo.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+
+<%= render "shared/footer" %>
