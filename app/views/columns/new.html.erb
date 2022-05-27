@@ -1,0 +1,105 @@
+<%= render "shared/header" %>
+<div class="items-sell-contents">
+  <header class="items-sell-header">
+    <%= link_to image_tag('show.edit.logo.png' , size: '185x60'), "/" %>
+
+  </header>
+  <div class="items-sell-main">
+    <h2 class="items-sell-title">情報を入力</h2>
+    <%= form_with model:@column, local: true do |f| %>
+     <%= render 'shared/error_messages', model: f.object %>
+
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        トップ画像
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+
+    <div class="new-items">
+      <div class="weight-bold-text">
+        タイトル
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, class:"items-text", id:"item-name", placeholder:"タイトルを入力してください
+【例】腹筋を鍛えるときのトレーニング頻度", maxlength:"200" %>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          結論
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :introduction, class:"items-text", id:"item-info", placeholder:"伝えたいことはなんですか？
+【例】腹筋のトレーニングは、他の筋肉と同様に週2回を目標に実施すると良いとされています。腹筋は特別な筋肉ではない為、適度に休養を取ることが最終的にボディメイクの成功する近道となります。" ,rows:"10" ,maxlength:"1000000" %>
+      </div>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          理由
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :introduction, class:"items-text", id:"item-info", placeholder:"なぜそのようなことが考られるのですか？ 
+(※特にない場合は、「特になし」と入力してください。)
+【例】確かに、遅筋優位な筋肉は低負荷・高回数で頻度を高めにした方が発達しやすいです。しかし、腹筋の筋繊維比率は速筋が54%, 遅筋が46%で速筋優位である為、特に腹筋が高回数に反応しやすい部位であるという訳ではないです。腹筋も物理的刺激を狙った高重量種目と化学的刺激を狙った低重量種目を組み合わせてトレーニングをしていくと良いです。" ,rows:"30" ,maxlength:"1000000" %>
+      </div>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          参考にしたもの
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :introduction, class:"items-text", id:"item-info", placeholder:"参考にした動画や論文、ニュースのURLなどがあれば入力してください。
+(※特にない場合は、「特になし」と入力してください。)
+【例】1.スクワット中の腹直筋の筋活動
+Aspe RR, Swinton PA. Electromyographic and kinetic comparison of the back squat and overhead squat. J Strength Cond Res. 2014 Oct;28(10):2827-36. doi: 10.1519/JSC.0000000000000462. PMID: 24662228.
+
+2.腹直筋の上下の神経支配
+Sarti MA, Monfort M, Fuster MA, Villaplana LA. Muscle activity in upper and lower rectus abdominus during abdominal exercises. Arch Phys Med Rehabil. 1996 Dec;77(12):1293-7. doi: 10.1016/s0003-9993(96)90195-1. PMID: 8976314.
+
+3.腹直筋の筋電図解析 その1
+Bret Contreras,Inside the Muscles: Best Ab Exercises,2010
+
+4.腹直筋の筋電図解析 その2
+Escamilla RF, Babb E, DeWitt R, Jew P, Kelleher P, Burnham T, Busch J, D'Anna K, Mowbray R, Imamura RT. Electromyographic analysis of traditional and nontraditional abdominal exercises: implications for rehabilitation and training. Phys Ther. 2006 May;86(5):656-71. PMID: 16649890.
+
+5.腹直筋の筋電図解析 その3
+SuppVersity EMG Series - Rectus Abdominis
+
+6.前鋸筋の活動が外腹斜筋の活動に及ぼす影響
+荒川,前鋸筋の活動が外腹斜筋の活動に及ぼす影響,2008
+
+7.腹直筋と股関節屈筋群の関係性
+Neumann DA. Kinesiology of the hip: a focus on muscular actions. J Orthop Sports Phys Ther. 2010 Feb;40(2):82-94. doi: 10.2519/jospt.2010.3025. PMID: 20118525.
+
+8.骨盤の動きと腹直筋の活動の関係性
+Workman JC, Docherty D, Parfrey KC, Behm DG. Influence of pelvis position on the activation of abdominal and hip flexor muscles. J Strength Cond Res. 2008 Sep;22(5):1563-9. doi: 10.1519/JSC.0b013e3181739981. PMID: 18714231." ,rows:"10" ,maxlength:"1000000" %>
+      </div>
+      
+    </div>
+
+    <div class="items-detail">
+      <div class="weight-bold-text">分類</div>
+      <div class="form">
+        <div class="weight-bold-text">
+          ジャンル
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+        <div class="weight-bold-text">
+          トレーニングの部位
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:part_id, Part.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+      </div>
+    </div>
+
+    <div class="sell-btn-contents">
+      <%= f.submit "投稿する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+  </div>
+  <% end %>
+</div>
+<%= render "shared/footer" %>

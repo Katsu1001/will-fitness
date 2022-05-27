@@ -2,6 +2,7 @@ class ToppagesController < ApplicationController
   
   # トップページ
   def index
+    @columns = Column.all.order("created_at DESC")
   end
 
   # プライバシーポリシー
