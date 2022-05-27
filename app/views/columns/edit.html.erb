@@ -1,13 +1,15 @@
+<%# cssは商品出品のものを併用しています。
+app/assets/stylesheets/items/new.css %>
 <%= render "shared/header" %>
 <div class="items-sell-contents">
   <header class="items-sell-header">
     <%= link_to image_tag('show.edit.logo.png' , size: '185x60'), "/" %>
-
   </header>
   <div class="items-sell-main">
     <h2 class="items-sell-title">情報を入力</h2>
-    <%= form_with model:@column, local: true do |f| %>
-     <%= render 'shared/error_messages', model: f.object %>
+    <%= form_with(model: @column, local: true) do |f| %>
+
+    <%= render 'shared/error_messages', model: f.object %>
 
     <div class="img-upload">
       <div class="weight-bold-text">
@@ -20,7 +22,7 @@
         <%= f.file_field :image, id:"item-image" %>
       </div>
     </div>
-
+    
     <div class="new-items">
       <div class="weight-bold-text">
         タイトル
@@ -75,8 +77,6 @@ Neumann DA. Kinesiology of the hip: a focus on muscular actions. J Orthop Sports
 8.骨盤の動きと腹直筋の活動の関係性
 Workman JC, Docherty D, Parfrey KC, Behm DG. Influence of pelvis position on the activation of abdominal and hip flexor muscles. J Strength Cond Res. 2008 Sep;22(5):1563-9. doi: 10.1519/JSC.0b013e3181739981. PMID: 18714231." ,rows:"10" ,maxlength:"1000000" %>
       </div>
-      
-    </div>
 
     <div class="items-detail">
       <div class="weight-bold-text">分類</div>
@@ -100,9 +100,10 @@ Workman JC, Docherty D, Parfrey KC, Behm DG. Influence of pelvis position on the
     </ul>
 
     <div class="sell-btn-contents">
-      <%= f.submit "投稿する" ,class:"sell-btn" %>
-      <%=link_to 'もどる', root_path, class:"back-btn" %>
+      <%= f.submit "投稿する", class:"sell-btn" %>
+      <%=link_to 'もどる', column_path, method: :get, class:"back-btn" %>
     </div>
+
   </div>
   <% end %>
 </div>
