@@ -51,6 +51,7 @@
 
 
 .item-red-btn {
+  border-radius: 40px;
   text-align: center;
   background-color: #ff8c00;
   font-size: 24px;
@@ -65,6 +66,7 @@
 }
 
 .item-destroy {
+  border-radius: 40px;
   background-color: lightgray;
   text-align: center;
   font-size: 24px;

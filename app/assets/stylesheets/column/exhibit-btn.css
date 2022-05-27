@@ -2,7 +2,7 @@
   width: 120px;
   background: #ff8c00;
   text-align: center;
-  border-radius: 4%;
+  border-radius: 40px;
   bottom: 32px;
   right: 32px;
   position: fixed;
@@ -18,5 +18,6 @@
 }
 
 .purchase-btn-icon {
+  border-radius: 10px;
   width: 60%;
 }

@@ -13,7 +13,7 @@
       <% if current_user.id == @column.user_id %>
         <%= link_to "編集", edit_column_path, method: :get, class: "item-red-btn" %>
           <p class="or-text">or</p>
-        <%= link_to "削除", root_path, method: :delete, class:"item-destroy" %>
+        <%= link_to "削除", "/columns/#{@column.id}", method: :delete, class:"item-destroy" %>
       <% end %>
     <% end %>
 
@@ -46,9 +46,9 @@
       </tbody>
     </table>
     <ul class="social_top_icon">
-      <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
-      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li> <a href="http://www.facebook.com/share.php?u=https%3A%2F%2Fwww.free-css.com%2Ffree-css-templates%2Fpage262%2Fdsports&t=DSports"><i class="fa fa-facebook-f"></i></a></li>
+      <li> <a href="http://twitter.com/home?status=DSports%20-%20https%3A%2F%2Fwww.free-css.com%2Ffree-css-templates%2Fpage262%2Fdsports"><i class="fa fa-twitter"></i></a></li>
+      <li> <a href="https://instagram.com/studiodartisan/"><i class="fa fa-instagram"></i></a></li>
     </ul>
     <div class="option">
       <div class="favorite-btn">
