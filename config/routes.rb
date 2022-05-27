@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'columns/index'
   devise_for :users
   root to:'toppages#index'
 
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
       get 'contact_us'
       get 'administrator_info'
     end
+  end
+
+  resources :columns do
   end
 
   resources :users do
