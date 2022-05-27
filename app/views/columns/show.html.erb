@@ -11,7 +11,7 @@
 
     <% if user_signed_in? %> 
       <% if current_user.id == @column.user_id %>
-        <%= link_to "編集", root_path, method: :get, class: "item-red-btn" %>
+        <%= link_to "編集", edit_column_path, method: :get, class: "item-red-btn" %>
           <p class="or-text">or</p>
         <%= link_to "削除", root_path, method: :delete, class:"item-destroy" %>
       <% end %>
@@ -40,11 +40,16 @@
           <td class="detail-value"><%= @column.reason %></td>
         </tr>
         <tr>
-          <th class="detail-item">理由</th>
+          <th class="detail-item">参考にしたもの</th>
           <td class="detail-value"><%= @column.reference %></td>
         </tr>
       </tbody>
     </table>
+    <ul class="social_top_icon">
+      <li> <a href="#"><i class="fa fa-facebook-f"></i></a></li>
+      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
+    </ul>
     <div class="option">
       <div class="favorite-btn">
         <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
@@ -52,7 +57,7 @@
       </div>
       <div class="report-btn">
         <%= image_tag "flag.png" ,class:"report-flag-icon" ,width:"20",height:"20"%>
-        <span>不適切な商品の通報</span>
+        <span>通報</span>
       </div>
     </div>
   </div>

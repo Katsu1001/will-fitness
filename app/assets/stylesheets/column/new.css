@@ -31,7 +31,7 @@
 
 /* 共通 */
 .indispensable {
-  background: #e29118;
+  background: #ff8c00;
   margin-left: 8px;
   padding: 3px;
   border-radius: 2px;
@@ -182,8 +182,8 @@
 }
 
 .sell-btn {
-  background: #e29118;
-  border: 1px solid #e29118;
+  background: #ff8c00;
+  border: 1px solid #ff8c00;
   color: #fff;
   width: 100%;
   height: 50px;
@@ -226,4 +226,40 @@
 
 .inc {
   font-size: 13px;
+}
+
+ul.social_top_icon {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 7px;
+}
+
+ul.social_top_icon li {
+  float: left;
+  height: 60px;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 20px;
+}
+
+ul.social_top_icon li a {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border: solid #000 1px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100%;
+  font-size: 18px;
+}
+
+ul.social_top_icon li a:hover {
+  background: #ff8c00;
+  border: solid #ff8c00 1px;
+  color: #fff;
 }
