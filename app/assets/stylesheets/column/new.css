@@ -31,6 +31,7 @@
 
 /* 共通 */
 .indispensable {
+  border-radius: 40px;
   background: #ff8c00;
   margin-left: 8px;
   padding: 3px;
@@ -47,6 +48,7 @@
 }
 
 .select-box {
+  border-radius: 40px;
   height: 30px;
   width: 100%;
   background-color: #f5f5f5;
@@ -97,6 +99,7 @@
 }
 
 .items-text {
+  border-radius: 40px;
   width: 100%;
   padding: 16px 16px 8px;
   border-radius: 4px;
@@ -182,6 +185,7 @@
 }
 
 .sell-btn {
+  border-radius: 40px;
   background: #ff8c00;
   border: 1px solid #ff8c00;
   color: #fff;
@@ -192,6 +196,7 @@
 }
 
 .back-btn {
+  border-radius: 40px;
   background: #aaa;
   border: 1px solid #aaa;
   color: #fff;
