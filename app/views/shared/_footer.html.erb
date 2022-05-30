@@ -15,31 +15,41 @@
 
 <div class='footer'>
   <div class='footer-contents'>
-    <div class='furima-details'>
-      <h2 class='footer-content-head'>Willについて</h2>
-      <ul>
-        <li><%= link_to '会社概要（運営会社)', "#", class: "footer-link" %></li>
-        <li><%= link_to 'プライバシーポリシー', privacy_policy_toppages_path, class: "footer-link" %></li>
-        <li><%= link_to 'Will利用規約', regulation_toppages_path, class: "footer-link" %></li>
-        <li><%= link_to 'ポイントに関する特約', "#", class: "footer-link" %></li>
-      </ul>
+      <div class="footer-widget-box list">
+        <h4 class="footer-widget-title">メールマガジン</h4>
+        <div class="footer-newsletter">
+          <p>メールマガジンの登録をすると最新のコラム情報をお届けします</p>
+          <div class="subscribe-form">
+            <form>
+                <input type="email" class="form-control" placeholder="Your Email">
+                <button class="theme-btn" type="submit">
+                  <i class="far fa-paper-plane"></i> 登録する
+                </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer-widget-box list">
+        <h4 class="footer-widget-title">Quick Links</h4>
+        <ul class="footer-list">
+          <li><a href="#"><i class="fas fa-caret-right"></i> 会社概要（運営会社）</a></li>
+          <li><a href="privacy_policy.html"><i class="fas fa-caret-right"></i> プライバシーポリシー</a></li>
+          <li><a href="regulation.html"><i class="fas fa-caret-right"></i> 利用規約</a></li>
+        </ul>
+      </div>
+      <div class="footer-widget-box">
+        <h4 class="footer-widget-title">お問い合わせ方法</h4>
+        <ul class="footer-contact">
+          <li><a href="mailto:highflyergym@gmail.com"><i class="far fa-envelope"></i>abcd.1234@gmail.com</a>
+          </li>
+          <li><i class="far fa-clock"></i>Mon - sat(08AM - 10PM)</li>
+        </ul>
+      </div>
     </div>
-    <div class='furima-details'>
-      <h2 class='footer-content-head'>Willを見る</h2>
-      <ul>
-        <li><%= link_to 'お問い合わせ', contact_us_toppages_path, class: "footer-link" %></li>
-        <li><%= link_to '管理者情報', administrator_info_toppages_path, class: "footer-link" %></li>
-      </ul>
-    </div>
-    <div class='furima-details'>
-      <h2 class='footer-content-head'>Willについて</h2>
-      <ul>
-        <li><%= link_to 'Willガイド', "#", class: "footer-link" %></li>
-        <li><%= link_to 'Willロゴ利用ガイドライン', "#", class: "footer-link" %></li>
-        <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
-      </ul>
-    </div>
+      <div class="footer-widget-box about-us">
+        <a href="#" class="footer-logo">
+          <img src="will.icon.logo.png" alt="">
+        </a>
+      </div>
   </div>
-  <%= link_to image_tag("will.icon.logo.png", class:"logo-white"), "#" %>
-  <p>© 2022 Will</p>
 </div>

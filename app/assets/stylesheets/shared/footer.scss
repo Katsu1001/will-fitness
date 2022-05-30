@@ -1,80 +1,5 @@
-/* 下部広告部分 */
-/* items/index.htmlの広告cssを所々使いまわしています。 */
-
-//スマホ用のcssを記述-------------------------------------------
-@media screen and (max-width:479px) {
-
-.ad-footer-contents {
-  width: 100vw;
-  height: 50vh;
-  background-image: image-url("toppage.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-}
-
-.ad-footer-title {
-  font-size: 4vh;
-  margin-bottom: 2vh;
-}
-
-.ad-footer-explain {
-  font-size: 3vh;
-  line-height: 30px;
-}
-
-/* //下部広告部分 */
-
-.footer {
-  width: 100vw;
-  padding: 5vh 0;
-  color: #FFF;
-  background-color: #272727;
-  text-align: center;
-}
-
-.footer-contents {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5vh;
-}
-
-.furima-details {
-  margin: 0 4vw;
-}
-
-.footer-content-head {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.footer-link {
-  color: #FFF;
-  font-size: 12px;
-  line-height: 30px;
-}
-
-.logo-white {
-  width: 20vh;
-  vertical-align: bottom;
-}
-
-.footer>p {
-  font-size: 14px;
-}
-}
-
-//tablet用のcssを記述------------------------------------------------
-@media only screen and (min-width:480px) and (max-width:950px) {
-
+// スマホ用のcssを記述------------------------------------------------
+@media screen and (min-width:480px) {
   .ad-footer-contents {
     width: 100vw;
     height: 50vh;
@@ -87,13 +12,14 @@
     align-items: center;
     justify-content: center;
     padding: 5vh 15vw;
-    color: #fff;
+    color: #FFF;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   }
   
   .ad-footer-title {
     font-size: 4vh;
     margin-bottom: 2vh;
+    color: #FFF;
   }
   
   .ad-footer-explain {
@@ -106,7 +32,7 @@
   .footer {
     width: 100vw;
     padding: 5vh 0;
-    color: #FFF;
+    color: #212529;
     background-color: #272727;
     text-align: center;
   }
@@ -134,6 +60,7 @@
   }
   
   .logo-white {
+    border-radius: 30px;
     width: 20vh;
     vertical-align: bottom;
   }
@@ -143,9 +70,7 @@
   }
 }
 
-//pc用のcssを記述----------------------------------------------
-@media screen and (min-width:951px) {
-
+@media screen and (min-width:768px) and ( max-width:1024px) {
   .ad-footer-contents {
     width: 100vw;
     height: 50vh;
@@ -158,13 +83,14 @@
     align-items: center;
     justify-content: center;
     padding: 5vh 15vw;
-    color: #fff;
+    color: #FFF;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
   }
   
   .ad-footer-title {
     font-size: 4vh;
     margin-bottom: 2vh;
+    color: #FFF;
   }
   
   .ad-footer-explain {
@@ -177,7 +103,7 @@
   .footer {
     width: 100vw;
     padding: 5vh 0;
-    color: #FFF;
+    color: #212529;
     background-color: #272727;
     text-align: center;
   }
@@ -205,6 +131,435 @@
   }
   
   .logo-white {
+    border-radius: 30px;
+    width: 20vh;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .ad-footer-contents {
+    width: 100vw;
+    height: 50vh;
+    background-image: image-url("toppage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vw;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .ad-footer-title {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #FFF;
+  }
+  
+  .ad-footer-explain {
+    font-size: 3vh;
+    line-height: 30px;
+  }
+  
+  /* //下部広告部分 */
+  
+  .footer {
+    width: 100vw;
+    padding: 5vh 0;
+    color: #212529;
+    background-color: #272727;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .furima-details {
+    margin: 0 4vw;
+  }
+  
+  .footer-content-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  .logo-white {
+    border-radius: 30px;
+    width: 20vh;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 14px;
+  }
+}
+
+// tablet用のcssを記述------------------------------------------------
+@media only screen and (min-width:480px) and (max-width:950px) {
+  .ad-footer-contents {
+    width: 100vw;
+    height: 50vh;
+    background-image: image-url("toppage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vw;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .ad-footer-title {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #FFF;
+  }
+  
+  .ad-footer-explain {
+    font-size: 3vh;
+    line-height: 30px;
+  }
+  
+  /* //下部広告部分 */
+  
+  .footer {
+    width: 100vw;
+    padding: 5vh 0;
+    color: #212529;
+    background-color: #272727;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .furima-details {
+    margin: 0 4vw;
+  }
+  
+  .footer-content-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  .logo-white {
+    border-radius: 30px;
+    width: 20vh;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 14px;
+  }
+}
+
+// PC用のcssを記述------------------------------------------------
+@media screen and (max-width: 1024px) {
+  .ad-footer-contents {
+    width: 100vw;
+    height: 50vh;
+    background-image: image-url("toppage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vw;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .ad-footer-title {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #FFF;
+  }
+  
+  .ad-footer-explain {
+    font-size: 3vh;
+    line-height: 30px;
+  }
+  
+  /* //下部広告部分 */
+  
+  .footer {
+    width: 100vw;
+    padding: 5vh 0;
+    color: #212529;
+    background-color: #272727;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .furima-details {
+    margin: 0 4vw;
+  }
+  
+  .footer-content-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  .logo-white {
+    border-radius: 30px;
+    width: 20vh;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ad-footer-contents {
+    width: 100vw;
+    height: 50vh;
+    background-image: image-url("toppage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vw;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .ad-footer-title {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #FFF;
+  }
+  
+  .ad-footer-explain {
+    font-size: 3vh;
+    line-height: 30px;
+  }
+  
+  /* //下部広告部分 */
+  
+  .footer {
+    width: 100vw;
+    padding: 5vh 0;
+    color: #212529;
+    background-color: #272727;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .furima-details {
+    margin: 0 4vw;
+  }
+  
+  .footer-content-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  .logo-white {
+    border-radius: 30px;
+    width: 20vh;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ad-footer-contents {
+    width: 100vw;
+    height: 50vh;
+    background-image: image-url("toppage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vw;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .ad-footer-title {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #FFF;
+  }
+  
+  .ad-footer-explain {
+    font-size: 3vh;
+    line-height: 30px;
+  }
+  
+  /* //下部広告部分 */
+  
+  .footer {
+    width: 100vw;
+    padding: 5vh 0;
+    color: #212529;
+    background-color: #272727;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .furima-details {
+    margin: 0 4vw;
+  }
+  
+  .footer-content-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  .logo-white {
+    border-radius: 30px;
+    width: 20vh;
+    vertical-align: bottom;
+  }
+  
+  .footer>p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .ad-footer-contents {
+    width: 100vw;
+    height: 50vh;
+    background-image: image-url("toppage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5vh 15vw;
+    color: #FFF;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+  }
+  
+  .ad-footer-title {
+    font-size: 4vh;
+    margin-bottom: 2vh;
+    color: #FFF;
+  }
+  
+  .ad-footer-explain {
+    font-size: 3vh;
+    line-height: 30px;
+  }
+  
+  /* //下部広告部分 */
+  
+  .footer {
+    width: 100vw;
+    padding: 5vh 0;
+    color: #212529;
+    background-color: #272727;
+    text-align: center;
+  }
+  
+  .footer-contents {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .furima-details {
+    margin: 0 4vw;
+  }
+  
+  .footer-content-head {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .footer-link {
+    color: #FFF;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  
+  .logo-white {
+    border-radius: 30px;
     width: 20vh;
     vertical-align: bottom;
   }

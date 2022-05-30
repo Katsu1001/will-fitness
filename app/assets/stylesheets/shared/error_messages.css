@@ -1,11 +1,114 @@
-.error-alert {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5vh;
+/* スマホ用のcssを記述------------------------------------------------ */
+@media screen and (min-width:480px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
 }
 
-.error-message {
-  font-size: 1.3vw;
-  list-style: circle;
-  color: #ff8c00(240, 153, 47);
+@media screen and (min-width:768px) and ( max-width:1024px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
+}
+
+@media screen and (min-width:1024px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
+}
+
+/* tablet用のcssを記述------------------------------------------------ */
+@media only screen and (min-width:480px) and (max-width:950px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
+}
+
+/* PC用のcssを記述------------------------------------------------ */
+@media screen and (max-width: 1024px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .error-alert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  .error-message {
+    font-size: 1.3vw;
+    list-style: circle;
+    color: #ff8c00(240, 153, 47);
+  }
 }
