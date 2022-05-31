@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   resources :toppages, only: :index do
     collection do
+      get 'to_do_list'
       get 'privacy_policy'
       get 'regulation'
       get 'contact_us'
