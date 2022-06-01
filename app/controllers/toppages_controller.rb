@@ -5,6 +5,10 @@ class ToppagesController < ApplicationController
     @columns = Column.all.order("created_at DESC")
   end
 
+  # 目標管理機能
+  def todolist
+  end
+
   # プライバシーポリシー
   def privacy_policy
   end

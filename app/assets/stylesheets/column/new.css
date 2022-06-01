@@ -1,7 +1,7 @@
 /* スマホ用のcssを記述------------------------------------------------ */
 @media screen and (min-width:480px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -13,19 +13,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -41,17 +42,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -94,17 +95,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -115,18 +116,18 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
   
   /* /商品の詳細など */
@@ -271,7 +272,7 @@
 
 @media screen and (min-width:768px) and ( max-width:1024px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -283,19 +284,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -311,17 +313,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -364,17 +366,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -385,19 +387,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
@@ -541,7 +544,7 @@
 
 @media screen and (min-width:1024px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -553,19 +556,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -581,17 +585,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -634,17 +638,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -655,19 +659,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
@@ -812,7 +817,7 @@
 /* tablet用のcssを記述------------------------------------------------ */
 @media only screen and (min-width:480px) and (max-width:950px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -824,19 +829,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -852,17 +858,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -905,17 +911,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -926,19 +932,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
@@ -1083,7 +1090,7 @@
 /* PC用のcssを記述------------------------------------------------ */
 @media screen and (max-width: 1024px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -1095,19 +1102,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -1123,17 +1131,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -1176,17 +1184,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -1197,19 +1205,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
@@ -1353,7 +1362,7 @@
 
 @media screen and (max-width: 768px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -1365,19 +1374,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -1393,17 +1403,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -1446,17 +1456,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -1467,19 +1477,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
@@ -1623,7 +1634,7 @@
 
 @media screen and (max-width: 480px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -1635,19 +1646,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -1663,17 +1675,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -1716,17 +1728,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -1737,19 +1749,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
@@ -1893,7 +1906,7 @@
 
 @media screen and (max-width: 320px) {
   .items-sell-contents {
-    background-color: #f5f5f5;
+    background-color: #FFF;
     font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
     font-size: 14px;
     display: flex;
@@ -1905,19 +1918,20 @@
   .items-sell-header {
     padding: 5vh 0;
     text-align: center;
+    background-color: #FFF
   }
   
   .items-sell-main {
-    background-color: #FFF;
-    width: 70vw;
-    min-width: 450px;
-    padding: 10vh 15vw;
+    background-color: #FFF!important;
+    width: 70vw!important;
+    min-width: 450px!important;
+    padding: 10vh 15vw!important;
   }
   
   .items-sell-title {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 22px!important;
+    font-weight: bold!important;
+    text-align: center!important;
   }
   
   /* 共通 */
@@ -1933,17 +1947,17 @@
   }
   
   .weight-bold-text {
-    font-weight: bold;
-    min-width: 170px;
-    margin-bottom: 10px;
+    font-weight: bold!important;
+    min-width: 170px!important;
+    margin-bottom: 10px!important;
   }
   
   .select-box {
-    border-radius: 40px;
-    height: 30px;
-    width: 100%;
-    background-color: #f5f5f5;
-    padding-left: 20px;
+    border-radius: 40px!important;
+    height: 30px!important;
+    width: 100%!important;
+    background-color: #f5f5f5!important;
+    padding-left: 20px!important;
   }
   
   .question {
@@ -1986,17 +2000,17 @@
   
   /* 商品名と商品説明 */
   .new-items {
-    padding: 2vh 0;
+    padding: 2vh 0!important;
   }
   
   .items-text {
-    border-radius: 40px;
-    width: 100%;
-    padding: 16px 16px 8px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    resize: none;
+    border-radius: 40px!important;
+    width: 100%!important;
+    padding: 16px 16px 8px!important;
+    border-radius: 4px!important;
+    border: 1px solid #ccc!important;
+    font-size: 16px!important;
+    resize: none!important;
   }
   
   .items-explain {
@@ -2007,19 +2021,20 @@
   
   /* 商品の詳細など */
   .items-detail {
-    display: flex;
-    justify-content: space-between;
-    padding: 2vh 0;
+    display: flex!important;
+    justify-content: space-between!important;
+    padding: 2vh 0!important;
   }
   
   .items-detail>.form {
-    width: 300px;
-    padding: 2vh 0;
+    width: 300px!important;
+    padding: 2vh 0!important;
   }
   
   .select-box {
-    margin: 2vh 0;
+    margin: 2vh 0!important;
   }
+  
   
   /* /商品の詳細など */
   
