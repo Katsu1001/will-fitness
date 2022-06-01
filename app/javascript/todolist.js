@@ -24,7 +24,7 @@ new Vue({
 		todoNotDone: 'notCompleted',
 		filterType: this.allTodos,
 		editingValue: '',
-		todoIndexToEdit: '',
+		todoTodolistToEdit: '',
 		todoList: todoListStorage.fetch(),
 	},
 	methods: {
@@ -37,18 +37,18 @@ new Vue({
 				this.newTodoTitle = '';
 			}
 		},
-		editTodo: function(todoIndex) {
-			this.editingValue = this.todoList[todoIndex].title;
-			this.todoIndexToEdit = todoIndex;
+		editTodo: function(todoTodolist) {
+			this.editingValue = this.todoList[todoTodolist].title;
+			this.todoTodolistToEdit = todoTodolist;
 		},
 		updateTodo: function() {
-			this.todoList[this.todoIndexToEdit].title = this.editingValue;
+			this.todoList[this.todoTodolistToEdit].title = this.editingValue;
 			this.editingValue = '';
 		},
-		deleteTodo: function(todoIndex){
-			let confirmAlert = confirm(`Are you sure you want to delete ${this.todoList[todoIndex].title} ?`);
+		deleteTodo: function(todoTodolist){
+			let confirmAlert = confirm(`Are you sure you want to delete ${this.todoList[todoTodolist].title} ?`);
 			if (confirmAlert) {
-				this.todoList.splice(todoIndex, 1);
+				this.todoList.splice(todoTodolist, 1);
 			}
 		},
 		clearTodosList: function() {
@@ -62,7 +62,7 @@ new Vue({
 			if (confirmAlert) {
 				this.todoList.filter((el) => {
 					if (el.isCompleted) {
-						this.todoList.splice(this.todoList.indexOf(el), 1);
+						this.todoList.splice(this.todoList.todolistOf(el), 1);
 					}
 				});
 			}

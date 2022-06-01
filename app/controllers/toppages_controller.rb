@@ -6,7 +6,7 @@ class ToppagesController < ApplicationController
   end
 
   # 目標管理機能
-  def to_do_list
+  def todolist
   end
 
   # プライバシーポリシー

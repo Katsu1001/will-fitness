@@ -1,0 +1,220 @@
+<%= render 'shared/header' %>
+
+<div class="container" id="app">
+	<div class="card z-depth-3">
+		<div class="card-header">
+			<h1 class="cap center-align">目標を決めて、逆算しましょう</h1>
+		</div>
+		<div class="card-content">
+			<div class="row">
+				<div class="input-field col s12 l4">
+					<input type="text" v-model="newTodoTitle" @keyup.enter="addTodo" placeholder="目標は何ですか？" autofocus>
+				</div>
+				<div class="input-field col s12 l4">
+					<select name="filter" id="todo-filter" @change="todosFilter" v-model="filterType">
+						<option :value="allTodos" selected="true">全て</option>
+						<option :value="todoDone">達成済み</option>
+						<option :value="todoNotDone">未達成</option>
+					</select>
+					<label for="todo-filter">フィルター</label>
+				</div>
+				<div class="col s12 l4">
+					<div class="row">
+						<div class="col s3">
+							<a href="#" @click.prevent="clearTodosList" class="btn red-text transparent z-depth-0 tooltipped" data-position="top" data-tooltip="Remove All Todos">
+								<i class="fa fa-fw fa-broom"></i>
+							</a>
+						</div>
+						<div class="col s3">
+							<a href="#" @click.prevent="deleteCompletedTodos" class="btn orange-text transparent z-depth-0 tooltipped" data-position="top" data-tooltip="Remove Completed Todos">
+								<i class="fa fa-fw fa-clipboard-check"></i>
+							</a>
+						</div>
+						<div class="col s3">
+							<a href="#" @click.prevent="makeAllCompleted" class="btn green-text transparent z-depth-0 tooltipped" data-position="top" data-tooltip="make All Todos Completed">
+								<i class="fa fa-fw fa-check-circle"></i>
+							</a>
+						</div>
+						<div class="col s3">
+							<a href="#" @click.prevent="makeAllNotCompleted" class="btn blue-text transparent z-depth-0 tooltipped" data-position="top" data-tooltip="make All Todos Completed">
+								<i class="fa fa-fw fa-clock"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cap col s12 l4">
+					<h5>全て: {{todoList.length}}</h5>
+				</div>
+				<div class="cap col s12 l4">
+					<h5>達成済み: {{completedTodosLength()}}</h5>
+				</div>
+				<div class="cap col s12 l4">
+					<h5>未達成: {{notCompletedTodosLength()}}</h5>
+				</div>
+			</div>
+		</div>
+		<div class="">
+
+			<template v-if="todosFilter() != ''">
+				<div :class="{hide: editingValue != ''}">
+					<ul class="collection">
+						<li class="collection-item" v-for="(todo, todolist) in todosFilter()" :class="{completed: todo.isCompleted}">
+							<label>
+								<input type="checkbox" v-model="todo.isCompleted" :checked="todo.isCompleted">
+								<span>
+									<span class="todo-title" v-text="todo.title"></span>
+								</span>
+								<span>
+									<a href="#" class="btn-floating right transparent z-depth-0 center-align tooltipped" data-position="top" data-tooltip="Delete" @click.prevent="deleteTodo(todolist)">
+										<i class="fa fa-fw fa-trash red-text"></i>
+									</a>
+									<a href="#" class="btn-floating right transparent z-depth-0 center-align tooltipped" data-position="top" data-tooltip="Edit" @click.prevent="editTodo(todolist)">
+										<i class="fa fa-fw fa-pen green-text"></i>
+									</a>
+								</span>
+							</label>
+						</li>
+					</ul>
+				</div>
+				<div :class="{hide: editingValue == ''}">
+					<div class="input-field">
+						<input type="text" v-model="editingValue" @keyup.enter="updateTodo()" @keyup.esc="cancelEditing()">
+					</div>
+				</div>
+			</template>
+			<template v-else>
+				<h3 class="cap center">no todo in the list</h3>
+			</template>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+  $(function(){
+	  $('.tooltipped').tooltip();
+	  $("select").formSelect();
+  });
+
+    // Vue.Js codes
+    var dataStorageName = "todoList",
+		  todoListStorage = {
+			  fetch: function() {
+				  return JSON.parse(localStorage.getItem(dataStorageName) || '[]');
+			  },
+			  save: function(todos) {
+				  return localStorage.setItem(dataStorageName, JSON.stringify(todos));
+			  }
+		  };
+
+    new Vue({
+	    el: '#app',
+	    data: {
+		    newTodoTitle: '',
+		    allTodos: 'all',
+		    todoDone: 'completed',
+		    todoNotDone: 'notCompleted',
+		    filterType: this.allTodos,
+		    editingValue: '',
+		    todoTodolistToEdit: '',
+		    todoList: todoListStorage.fetch(),
+	    },
+	    methods: {
+		    addTodo: function() {
+			    if (this.newTodoTitle.trim() != '') {
+				    this.todoList.push({
+					    title: this.newTodoTitle,
+					    isCompleted: false,
+				    });
+				    this.newTodoTitle = '';
+			    }
+		    },
+		    editTodo: function(todoTodolist) {
+			    this.editingValue = this.todoList[todoTodolist].title;
+			    this.todoTodolistToEdit = todoTodolist;
+		    },
+		    updateTodo: function() {
+			    this.todoList[this.todoTodolistToEdit].title = this.editingValue;
+			    this.editingValue = '';
+		    },
+		    deleteTodo: function(todoTodolist){
+			    let confirmAlert = confirm(`Are you sure you want to delete ${this.todoList[todoTodolist].title} ?`);
+			    if (confirmAlert) {
+				    this.todoList.splice(todoTodolist, 1);
+			    }
+		    },
+		    clearTodosList: function() {
+			    let confirmAlert = confirm(`Are you sure you want to delete all todos ?`);
+			    if (confirmAlert) {
+				    this.todoList.splice(0, this.todoList.length);
+			    }
+		    },
+		    deleteCompletedTodos: function() {
+			    let confirmAlert = confirm(`Are you sure you want to delete all completed todos ?`);
+			    if (confirmAlert) {
+				    this.todoList.filter((el) => {
+					    if (el.isCompleted) {
+						    this.todoList.splice(this.todoList.todolistOf(el), 1);
+					    }
+				    });
+			    }
+		    },
+		    todosFilter: function() {
+			    var todoListAfterFilter;
+			    var ft = this.filterType;
+			    if (ft == this.todoDone) {
+				    todoListAfterFilter = this.todoList.filter((el) => {
+					    return el.isCompleted;
+				    });
+			    } else if (ft == this.todoNotDone) {
+				    todoListAfterFilter = this.todoList.filter((el) => {
+					    return ! el.isCompleted;
+				    });
+			    } else if (ft == this.allTodos) {
+				    todoListAfterFilter = this.todoList;
+			    } else {
+				    todoListAfterFilter = this.todoList;
+			    }
+			    return todoListAfterFilter;
+		    },
+		    completedTodosLength: function() {
+			    return this.todoList.filter((el) => {
+				    if (el.isCompleted) {
+					    return el;
+				    }
+			    }).length;
+		    },
+		    notCompletedTodosLength: function() {
+			    return this.todoList.filter((el) => {
+				    if (! el.isCompleted) {
+					    return el;
+				    }
+			    }).length;
+		    },
+		    makeAllCompleted: function() {
+			    return this.todoList.forEach((el) => {
+				    el.isCompleted = true;
+			    });
+		    },
+		    makeAllNotCompleted: function() {
+			    return this.todoList.forEach((el) => {
+				    el.isCompleted = false;
+			    });
+		    },
+		    cancelEditing: function() {
+			    this.editingValue = '';
+		    },
+	    },
+	    watch: {
+		    todoList: {
+			    handler: function(todoList) {
+				    todoListStorage.save(todoList);
+			    },
+			    deep: true,
+		    }
+	    },
+    });
+</script>
+
+<%= render 'shared/footer' %>
