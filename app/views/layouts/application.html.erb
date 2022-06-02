@@ -5,38 +5,51 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <link rel="icon" href="/favicon.ico" id="favicon">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <!-- favicon -->
+    <%= favicon_link_tag('favicon.ico') %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- calendar -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'><link rel="stylesheet" href="./style.css">
+    
+    <!-- todolist -->
     <link rel="stylesheet" type="text/css" href="./todolist/todolist.css">
 
   </head>
 
   <body>
+    <!-- favicon(notification_count) -->
     <script>
-    var notification_count = 0;
+      var notification_count = 0;
 
-    var link_tag = document.getElementById("favicon");
+      var link_tag = document.getElementById("favicon");
 
-    if (notification_count > 0) {
-      link_tag.href = "/favicon_d.ico";
-    } else {
-      link_tag.href = "/favicon.ico";
-    }
+      if (notification_count > 0) {
+        link_tag.href = "/favicon_d.ico";
+      } else {
+        link_tag.href = "/favicon.ico";
+      }
     </script>
+    
+    <!-- calendar -->
+    <head>
+      <script src="https://use.fontawesome.com/484df5253e.js"></script>
+    </head>
+    
+    <!-- todolist -->
+    <head>
+      <script src="https://kit.fontawesome.com/2ec2a30cc1.js" crossorigin="anonymous"></script> 
+    </head>
 
-    <script src="https://kit.fontawesome.com/2ec2a30cc1.js" crossorigin="anonymous"></script> 
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./todolist.js"></script>
+    <head>
+      <!-- partial(todolist) -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js'></script><script  src="./todolist.js"></script>
+    </head>
 
     <%= yield %>
 
