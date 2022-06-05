@@ -17,8 +17,8 @@
   http://will-fitness.herokuapp.com/
 
   <ID/Pass>
-  ID: kura
-  Pass: 1001
+  - ID: kura
+  - Pass: 1001
 
 #### 実装した機能
 ***
