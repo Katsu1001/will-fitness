@@ -23,9 +23,8 @@
       <% if user_signed_in? %> 
         <li><%= link_to 'ユーザー検索', root_path, class: "category-list" %></li>
         <li><%= link_to '写真', root_path, class: "category-list" %></li>
-        <li><%= link_to '目標設定', todolist_toppages_path, class: "category-list" %></li>
+        <li><%= link_to '目標設定', todolist_toppages_path(current_user.id), class: "category-list" %></li>
         <li><%= link_to 'カレンダー', user_path(current_user.id), class: "category-list" %></li>
-        <li><%= link_to '分析', root_path, class: "category-list" %></li>
         <li><%= link_to 'コラム', columns_index_path, class: "category-list" %></li>
       <% else %>
         <li><%= link_to 'コラム', columns_index_path, class: "category-list" %></li>
