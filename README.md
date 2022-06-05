@@ -14,7 +14,7 @@
 #### 接続先情報
 ***
   <アプリのURL>
-  http://will-fitness.herokuapp.com/
+  - http://will-fitness.herokuapp.com/
 
   <ID/Pass>
   - ID: kura
