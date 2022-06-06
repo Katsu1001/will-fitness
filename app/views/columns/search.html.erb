@@ -1,0 +1,38 @@
+<%= render "shared/header" %>
+
+<div class='column-contents' id="detailed-search-result-wrapper">
+  <%= search_form_for @q, url: search_columns_path, html: {id: "detailed-search-form"} do |f| %>
+    <div class="search-field">
+      <%= f.label :name, 'タイトル' %>
+      <br>
+      <%= f.text_field :name, placeholder: 'タイトル', value: params[:q]&.dig(:name) %>
+    </div>
+    <div class="search-field">
+      <%= f.label :user_nickname_cont, '投稿者名' %>
+      <br>
+      <%= f.text_field :user_nickname_cont, placeholder: '投稿者名' %>
+    </div>
+    <div class="search-field">
+      <%= f.label :category_id_in, 'ジャンル' %>
+      <br>
+      <%= f.collection_check_boxes(:category_id_in, Category.all, :id, :name, {include_blank: "---"}) %>
+    </div>
+    <div class="search-field">
+      <%= f.label :part_id_in, '部位' %>
+      <br>
+      <%= f.collection_check_boxes(:part_id_in, Part.all, :id, :name, {include_blank: "---"}) %>
+    </div>
+    <%= f.submit '検索' %>
+  <% end %>
+  <ul class='column-lists' id="detailed-search-result">
+    <% @columns.each do |column| %>
+      <li class='list'>
+        <div class="posted-content">
+          <%= image_tag column.image %><br>
+          <%= column.name%><br>
+          <%= link_to '詳細', column_path(column.id)%>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>

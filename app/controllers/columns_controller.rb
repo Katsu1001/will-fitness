@@ -36,6 +36,11 @@ class ColumnsController < ApplicationController
     end
   end
 
+  def search
+    @q = Column.ransack(params[:q])
+    @columns = @q.result
+  end
+
   def destroy
     @column.destroy
     redirect_to root_path
