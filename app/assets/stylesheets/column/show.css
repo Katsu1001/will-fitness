@@ -209,6 +209,34 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
+}
 }
 
 @media screen and (min-width:768px) and ( max-width:1024px) {
@@ -421,6 +449,34 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
+}
 }
 
 @media screen and (min-width:1024px) {
@@ -632,6 +688,34 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
+}
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
 }
 }
 
@@ -846,6 +930,34 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
+}
 }
 
 /* PC用のcssを記述------------------------------------------------ */
@@ -1059,6 +1171,34 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -1271,6 +1411,34 @@
   font-weight: bold;
   font-size: 23px;
 }
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -1482,6 +1650,34 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 23px;
+}
+
+/* コメント機能 */
+.comment-form{
+  display: flex;
+}
+
+.comment-text{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment-submit{
+  display: block;
+  margin-top: 20px;
+}
+
+.comment{
+  display: flex;
+}
+
+.comment p{
+   margin: 0;
+}
+
+.user-info{
+  color: gray;
+  font-weight: bold;
 }
 }
 

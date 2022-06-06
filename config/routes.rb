@@ -17,10 +17,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :columns do
-  end
-
   resources :users do
   end
+
+  resources :columns do
+    resources :comments, only: :create
+   end
 
 end
