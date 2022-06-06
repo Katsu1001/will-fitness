@@ -21,7 +21,7 @@
   <div class='nav'>
     <ul class='lists-left'>
       <% if user_signed_in? %> 
-        <li><%= link_to 'ユーザー検索', root_path, class: "category-list" %></li>
+        <li><%= link_to '検索', search_columns_path, class: "category-list" %></li>
         <li><%= link_to '写真', root_path, class: "category-list" %></li>
         <li><%= link_to '目標設定', todolist_toppages_path(current_user.id), class: "category-list" %></li>
         <li><%= link_to 'カレンダー', user_path(current_user.id), class: "category-list" %></li>

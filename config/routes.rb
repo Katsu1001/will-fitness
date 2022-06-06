@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       get 'regulation'
       get 'contact_us'
       get 'administrator_info'
+      get 'search'
     end
   end
 
@@ -21,6 +22,10 @@ Rails.application.routes.draw do
   end
 
   resources :columns do
+    collection do
+      get 'search'
+    end
+
     resources :comments, only: :create
    end
 
