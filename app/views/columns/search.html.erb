@@ -12,17 +12,21 @@
       <br>
       <%= f.text_field :user_nickname_cont, placeholder: '投稿者名' %>
     </div>
-    <div class="search-field">
-      <%= f.label :category_id_in, 'ジャンル' %>
-      <br>
-      <%= f.collection_check_boxes(:category_id_in, Category.all, :id, :name, {include_blank: "---"}) %>
+    <div class="form">
+      <div class="weight-bold-text">
+        <%= f.label :category_id_in, 'ジャンル' %>
+        <br>
+        <%= f.collection_select(:category_id_in, Category.all, :id, :name, {}, {class:"select-box", id:"item-category"}) %>
+      </div>
+      <div class="weight-bold-text">
+        <%= f.label :part_id_in, '部位' %>
+        <br>
+        <%= f.collection_select(:part_id_in, Part.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+      </div>
     </div>
-    <div class="search-field">
-      <%= f.label :part_id_in, '部位' %>
-      <br>
-      <%= f.collection_check_boxes(:part_id_in, Part.all, :id, :name, {include_blank: "---"}) %>
+    <div class="sell-btn-contents">
+      <%= f.submit '検索', class:"sell-btn" %>
     </div>
-    <%= f.submit '検索' %>
   <% end %>
   <ul class='column-lists' id="detailed-search-result">
     <% @columns.each do |column| %>
