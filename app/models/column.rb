@@ -6,6 +6,14 @@ class Column < ApplicationRecord
   belongs_to :user
   has_one_attached :image
   has_many :comments
+
+  def previous 
+    Column.where("id < ?", self.id).order("id DESC").first 
+  end 
+  
+  def next 
+    Column.where("id > ?", self.id).order("id ASC").first 
+  end
   
   #ジャンルの選択が「--」の時は保存できないようにする
   validates :category_id,:part_id, numericality: { other_than: 0}
