@@ -154,6 +154,8 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
+  border-radius: 40px;
 }
 
 .comment-text {
@@ -162,6 +164,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -398,6 +401,7 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
 }
 
 
@@ -407,6 +411,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -643,6 +648,7 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
 }
 
 
@@ -652,6 +658,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -889,6 +896,7 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
 }
 
 
@@ -898,6 +906,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -1135,6 +1144,7 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
 }
 
 
@@ -1144,6 +1154,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -1380,6 +1391,7 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
 }
 
 
@@ -1389,6 +1401,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -1625,6 +1638,7 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
 }
 
 
@@ -1634,6 +1648,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
@@ -1870,6 +1885,8 @@
   margin: 5vh 0;
   text-align: center;
   justify-content: center;
+  border-radius: 40px;
+  border-radius: 40px;
 }
 
 
@@ -1879,6 +1896,7 @@
   padding: 10px;
   border: solid 2px #dedede;
   resize: none;
+  border-radius: 40px;
 }
 
 .comment-warn {
