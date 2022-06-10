@@ -199,13 +199,14 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
   font-size: 30px;
   text-decoration: none;
   color: #ff8c00;
+  font-size: 20px;
 }
 
 .another-item {
@@ -214,7 +215,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -446,11 +447,12 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
+  font-size: 20px;
 
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -461,7 +463,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -693,11 +695,11 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -708,7 +710,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -941,11 +943,11 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -956,7 +958,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -1189,11 +1191,11 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -1204,7 +1206,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -1436,11 +1438,11 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -1451,7 +1453,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -1683,11 +1685,11 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -1698,7 +1700,7 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 
 /* コメント機能 */
@@ -1931,11 +1933,11 @@
   display: flex;
   justify-content: space-between;
   width: 50vw;
-
+  font-size: 20px;
 }
 
 .change-item-btn {
-  font-size: 30px;
+  font-size: 20px;
   text-decoration: none;
   color: #ff8c00;
 }
@@ -1946,6 +1948,6 @@
   color: #ff8c00;
   text-decoration: none;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
 }
 }
