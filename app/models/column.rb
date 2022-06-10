@@ -20,6 +20,7 @@ class Column < ApplicationRecord
   
   with_options presence: true do
     validates :name
+    validates :image
     validates :conclusion
     validates :reference
     validates :category_id
