@@ -84,7 +84,7 @@
 
 # データベース設計
 ***
-  [![Image from Gyazo](https://i.gyazo.com/3bcedf1627be93e31c6d5d8019e2b059.png)](https://gyazo.com/3bcedf1627be93e31c6d5d8019e2b059)
+  [![Image from Gyazo](https://i.gyazo.com/64d551cf0932e787ebb5d3fa3fd80c6d.png)](https://gyazo.com/64d551cf0932e787ebb5d3fa3fd80c6d)
 
 # 画面遷移図
 ***
