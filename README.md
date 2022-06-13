@@ -26,6 +26,10 @@
   - メールアドレス: sample@ne.jp
   - パスワード: sample10
 
+## トップページ
+***
+  [![Image from Gyazo](https://i.gyazo.com/075ec9db9fe66f4d550e0a370b2e5cbc.gif)](https://gyazo.com/075ec9db9fe66f4d550e0a370b2e5cbc)
+
 ## 実装した機能
 ***
 
