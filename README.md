@@ -33,7 +33,7 @@
   [![Image from Gyazo](https://i.gyazo.com/bc8f9049fa53f394dfde0686a42331cd.jpg)](https://gyazo.com/bc8f9049fa53f394dfde0686a42331cd)
   [![Image from Gyazo](https://i.gyazo.com/9f882e20dfc0dae6661c96f50082e56f.jpg)](https://gyazo.com/9f882e20dfc0dae6661c96f50082e56f)
   [![Image from Gyazo](https://i.gyazo.com/216c48832bff1bc5e5883a7c8ade59cf.jpg)](https://gyazo.com/216c48832bff1bc5e5883a7c8ade59cf)
-- [![Image from Gyazo](https://i.gyazo.com/7634cfd532bc3717fa3d7d5f4361b841.gif)](https://gyazo.com/7634cfd532bc3717fa3d7d5f4361b841)
+  [![Image from Gyazo](https://i.gyazo.com/7634cfd532bc3717fa3d7d5f4361b841.gif)](https://gyazo.com/7634cfd532bc3717fa3d7d5f4361b841)
 
 ## 実装した機能
 ***
@@ -112,7 +112,7 @@
   ***
     https://jungle-armadillo-6a4.notion.site/Errors-9c2fb37bd09c42dda906272bad9f6dda
   ***
-  - [![Image from Gyazo](https://i.gyazo.com/a9d8e59c811875dabee0398f2ed61d7e.gif)](https://gyazo.com/a9d8e59c811875dabee0398f2ed61d7e)
+  [![Image from Gyazo](https://i.gyazo.com/a9d8e59c811875dabee0398f2ed61d7e.gif)](https://gyazo.com/a9d8e59c811875dabee0398f2ed61d7e)
     ***
   
   2. タスク管理
@@ -120,7 +120,7 @@
   ***
     https://jungle-armadillo-6a4.notion.site/174ab696057040fbb343d632fb73ca92
   ***
-  - [![Image from Gyazo](https://i.gyazo.com/8a1f6b03402c028e212602537b71c8e8.gif)](https://gyazo.com/8a1f6b03402c028e212602537b71c8e8)
+  [![Image from Gyazo](https://i.gyazo.com/8a1f6b03402c028e212602537b71c8e8.gif)](https://gyazo.com/8a1f6b03402c028e212602537b71c8e8)
     ***
 
   3. JavaScriptのjQueryライブラリの利用
