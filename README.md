@@ -25,7 +25,6 @@
 ### トップページ
 ***
   [![Image from Gyazo](https://i.gyazo.com/dd93e6161cdb75af26ea387dc53ac0b1.gif)](https://gyazo.com/dd93e6161cdb75af26ea387dc53ac0b1)
-  ***
 
 ## 実装した機能
 ***
@@ -59,6 +58,8 @@
   - 詳細表示機能
   - 編集機能
   - 削除機能
+    [![Image from Gyazo](https://i.gyazo.com/2efb0c59bf1e547350d2ec87c812d06e.gif)](https://gyazo.com/2efb0c59bf1e547350d2ec87c812d06e)
+    ***
 
   5. カレンダー機能
   - トレーニング（トレーニングした部位、トレーニング内容）の管理
