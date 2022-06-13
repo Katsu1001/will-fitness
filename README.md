@@ -24,9 +24,9 @@
 
 ## 実装した機能
 ***
-  - トップページ
-    [![Image from Gyazo](https://i.gyazo.com/cc3b2fb16eb2c4f0feac5214252e04dd.gif)](https://gyazo.com/cc3b2fb16eb2c4f0feac5214252e04dd)
-    ***
+  #### トップページ
+   [![Image from Gyazo](https://i.gyazo.com/29cebf9b1807d6a31aeab5e592b2f163.gif)](https://gyazo.com/29cebf9b1807d6a31aeab5e592b2f163)
+   ***
 
   1. ユーザー管理機能
   - 新規登録機能
