@@ -25,6 +25,7 @@
 ### トップページ
 ***
   [![Image from Gyazo](https://i.gyazo.com/6df3c19f9cdf70d4c1c04ccb47a94b73.gif)](https://gyazo.com/6df3c19f9cdf70d4c1c04ccb47a94b73)
+   [![Image from Gyazo](https://i.gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da.gif)](https://gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da)
 
 ## 実装した機能
 ***
