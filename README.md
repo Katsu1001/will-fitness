@@ -25,7 +25,7 @@
 ### トップページ
 ***
   [![Image from Gyazo](https://i.gyazo.com/18e809f24877fa7b54f3b050042d9607.gif)](https://gyazo.com/18e809f24877fa7b54f3b050042d9607)
-  
+
 ## 実装した機能
 ***
 
@@ -38,6 +38,7 @@
   2. 体づくりの情報を管理する機能
   - 投稿機能
     [![Image from Gyazo](https://i.gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da.gif)](https://gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da)
+    [![Image from Gyazo](https://i.gyazo.com/18e809f24877fa7b54f3b050042d9607.gif)](https://gyazo.com/18e809f24877fa7b54f3b050042d9607)
     ***
   - 一覧表示機能
   - 詳細表示機能
