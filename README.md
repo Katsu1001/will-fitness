@@ -46,6 +46,8 @@
   - 編集機能
   - 削除機能
   - 詳細ページから投稿した情報に対してコメントができる機能
+    [![Image from Gyazo](https://i.gyazo.com/5cedb489cec62d9ab3f70fe66162ca8e.gif)](https://gyazo.com/5cedb489cec62d9ab3f70fe66162ca8e)
+    ***
 
   3. 新規登録・ログインページ以外の全てのページからページからSNS(Twitter, Facebook, Instagram, YouTube)へ遷移できる機能
   - (ex.トップページや記事を投稿・編集する画面、カレンダー画面など)
