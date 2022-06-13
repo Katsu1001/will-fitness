@@ -38,16 +38,22 @@
     ***
     ＜必要な情報を入力して、投稿ボタンを押した時の挙動＞
     [![Image from Gyazo](https://i.gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da.gif)](https://gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da)
+    ***
   - 一覧表示機能
     [![Image from Gyazo](https://i.gyazo.com/41a4b9f256928f78b20de08ab7fccc37.gif)](https://gyazo.com/41a4b9f256928f78b20de08ab7fccc37)
+    ***
   - 詳細表示機能
     [![Image from Gyazo](https://i.gyazo.com/13e946802f5ac7d36154c798330702ef.gif)](https://gyazo.com/13e946802f5ac7d36154c798330702ef)
+    ***
   - 編集機能
     [![Image from Gyazo](https://i.gyazo.com/644a898d4ee632279a7a048f5dbbeff9.gif)](https://gyazo.com/644a898d4ee632279a7a048f5dbbeff9)
+    ***
   - 削除機能
     [![Image from Gyazo](https://i.gyazo.com/34d1fdc02c4bbfca87d11d1842ad18c5.gif)](https://gyazo.com/34d1fdc02c4bbfca87d11d1842ad18c5)
+    ***
   - 詳細ページから投稿した情報に対してコメントができる機能
     [![Image from Gyazo](https://i.gyazo.com/5cedb489cec62d9ab3f70fe66162ca8e.gif)](https://gyazo.com/5cedb489cec62d9ab3f70fe66162ca8e)
+    ***
 
   3. 新規登録・ログインページ以外の全てのページからページからSNS(Twitter, Facebook, Instagram, YouTube)へ遷移できる機能
   - (ex.トップページや記事を投稿・編集する画面、カレンダー画面など)
