@@ -112,7 +112,7 @@
   ***
     https://jungle-armadillo-6a4.notion.site/Errors-9c2fb37bd09c42dda906272bad9f6dda
   ***
-    [![Image from Gyazo](https://i.gyazo.com/a9d8e59c811875dabee0398f2ed61d7e.gif)](https://gyazo.com/a9d8e59c811875dabee0398f2ed61d7e)
+  - [![Image from Gyazo](https://i.gyazo.com/a9d8e59c811875dabee0398f2ed61d7e.gif)](https://gyazo.com/a9d8e59c811875dabee0398f2ed61d7e)
     ***
   
   2. タスク管理
@@ -120,7 +120,7 @@
   ***
     https://jungle-armadillo-6a4.notion.site/174ab696057040fbb343d632fb73ca92
   ***
-    [![Image from Gyazo](https://i.gyazo.com/8a1f6b03402c028e212602537b71c8e8.gif)](https://gyazo.com/8a1f6b03402c028e212602537b71c8e8)
+  - [![Image from Gyazo](https://i.gyazo.com/8a1f6b03402c028e212602537b71c8e8.gif)](https://gyazo.com/8a1f6b03402c028e212602537b71c8e8)
     ***
 
   3. JavaScriptのjQueryライブラリの利用
