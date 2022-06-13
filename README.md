@@ -22,11 +22,12 @@
   - メールアドレス: sample@ne.jp
   - パスワード: sample10
 
+### トップページ
+***
+  [![Image from Gyazo](https://i.gyazo.com/18e809f24877fa7b54f3b050042d9607.gif)](https://gyazo.com/18e809f24877fa7b54f3b050042d9607)
+  
 ## 実装した機能
 ***
-  - トップページ
-    [![Image from Gyazo](https://i.gyazo.com/dd93e6161cdb75af26ea387dc53ac0b1.gif)](https://gyazo.com/dd93e6161cdb75af26ea387dc53ac0b1)
-    ***
 
   1. ユーザー管理機能
   - 新規登録機能
