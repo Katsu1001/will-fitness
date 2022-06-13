@@ -24,6 +24,8 @@
 
 ## 実装した機能
 ***
+  - トップページ
+  [![Image from Gyazo](https://i.gyazo.com/cc3b2fb16eb2c4f0feac5214252e04dd.gif)](https://gyazo.com/cc3b2fb16eb2c4f0feac5214252e04dd)
 
   1. ユーザー管理機能
   - 新規登録機能
@@ -33,25 +35,14 @@
 
   2. 体づくりの情報を管理する機能
   - 投稿機能
-    ＜何も入力していない状態の投稿ページ＞
-    [![Image from Gyazo](https://i.gyazo.com/916b3b4116218b03e2aae338dbc6d655.gif)](https://gyazo.com/916b3b4116218b03e2aae338dbc6d655)
-    ***
-    ＜必要な情報を入力して、投稿ボタンを押した時の挙動＞
     [![Image from Gyazo](https://i.gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da.gif)](https://gyazo.com/8b7f142dc0c0e6a24c5b3a260fdc12da)
     ***
   - 一覧表示機能
-    [![Image from Gyazo](https://i.gyazo.com/c06cebf0e0f488695e33c619c54b6a8f.gif)](https://gyazo.com/c06cebf0e0f488695e33c619c54b6a8f)
-    
-    ***
   - 詳細表示機能
     [![Image from Gyazo](https://i.gyazo.com/13e946802f5ac7d36154c798330702ef.gif)](https://gyazo.com/13e946802f5ac7d36154c798330702ef)
     ***
   - 編集機能
-    [![Image from Gyazo](https://i.gyazo.com/644a898d4ee632279a7a048f5dbbeff9.gif)](https://gyazo.com/644a898d4ee632279a7a048f5dbbeff9)
-    ***
   - 削除機能
-    [![Image from Gyazo](https://i.gyazo.com/34d1fdc02c4bbfca87d11d1842ad18c5.gif)](https://gyazo.com/34d1fdc02c4bbfca87d11d1842ad18c5)
-    ***
   - 詳細ページから投稿した情報に対してコメントができる機能
     [![Image from Gyazo](https://i.gyazo.com/5cedb489cec62d9ab3f70fe66162ca8e.gif)](https://gyazo.com/5cedb489cec62d9ab3f70fe66162ca8e)
     ***
@@ -89,7 +80,7 @@
   - 質疑応答機能（記述ではなく、選択肢を作る予定です。）
   - 条件分岐を利用し、質問に対する回答からその人に合った種目を選択する機能
 
-#　データベース設計
+# データベース設計
 ***
 
 [![Image from Gyazo](https://i.gyazo.com/3bcedf1627be93e31c6d5d8019e2b059.png)](https://gyazo.com/3bcedf1627be93e31c6d5d8019e2b059)
