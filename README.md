@@ -24,8 +24,7 @@
 
 ### トップページ
 ***
-
-  [![Image from Gyazo](https://i.gyazo.com/d0287eec16c6e4566b75156d87a65f17.gif)](https://gyazo.com/d0287eec16c6e4566b75156d87a65f17)
+  [![Image from Gyazo](https://i.gyazo.com/54371729b9313e171c4b5ff461816d77.gif)](https://gyazo.com/54371729b9313e171c4b5ff461816d77)
 
 ## 実装した機能
 ***
@@ -85,11 +84,9 @@
 
 # データベース設計
 ***
-
-[![Image from Gyazo](https://i.gyazo.com/3bcedf1627be93e31c6d5d8019e2b059.png)](https://gyazo.com/3bcedf1627be93e31c6d5d8019e2b059)
+  [![Image from Gyazo](https://i.gyazo.com/3bcedf1627be93e31c6d5d8019e2b059.png)](https://gyazo.com/3bcedf1627be93e31c6d5d8019e2b059)
 
 # 画面遷移図
 ***
-
-[![Image from Gyazo](https://i.gyazo.com/89a2d139b6d3458867484429aa7d19e9.png)](https://gyazo.com/89a2d139b6d3458867484429aa7d19e9)
+  [![Image from Gyazo](https://i.gyazo.com/89a2d139b6d3458867484429aa7d19e9.png)](https://gyazo.com/89a2d139b6d3458867484429aa7d19e9)
 
