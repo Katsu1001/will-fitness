@@ -41,6 +41,7 @@
     ***
   - 一覧表示機能
     [![Image from Gyazo](https://i.gyazo.com/c06cebf0e0f488695e33c619c54b6a8f.gif)](https://gyazo.com/c06cebf0e0f488695e33c619c54b6a8f)
+    
     ***
   - 詳細表示機能
     [![Image from Gyazo](https://i.gyazo.com/13e946802f5ac7d36154c798330702ef.gif)](https://gyazo.com/13e946802f5ac7d36154c798330702ef)
