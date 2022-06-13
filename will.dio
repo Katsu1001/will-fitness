@@ -136,7 +136,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="e1oTrJZnEmVo7WKCixkT" name="ページ2">
-        <mxGraphModel dx="331" dy="987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="-352" dy="987" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="_hvI1dxnZSOt8kmgRSOM-0"/>
                 <mxCell id="_hvI1dxnZSOt8kmgRSOM-1" parent="_hvI1dxnZSOt8kmgRSOM-0"/>
@@ -168,12 +168,15 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="_hvI1dxnZSOt8kmgRSOM-11" value="Columns テーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;container=0;" parent="1mbG-d1cchTlGY6Ax2Pe-0" vertex="1">
-                    <mxGeometry x="430" y="420" width="290" height="130" as="geometry">
+                    <mxGeometry x="430" y="420" width="290" height="234" as="geometry">
                         <mxRectangle x="450" y="120" width="120" height="26" as="alternateBounds"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="_hvI1dxnZSOt8kmgRSOM-23" value="name (string型, NOT NULL)&#10;introduction (text型, NOT NULL)&#10;category_id (integer型, NOT NULL)&#10;user (references型, NOT NULL, 外部キー)&#10;To_do_list (references型, NOT NULL, 外部キー)&#10;Favorite (references型, NOT NULL, 外部キー)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;container=0;" parent="_hvI1dxnZSOt8kmgRSOM-11" vertex="1">
+                <mxCell id="1mbG-d1cchTlGY6Ax2Pe-3" value="name (string型, NOT NULL)&#10;introduction (text型, NOT NULL)&#10;category_id (integer型, NOT NULL)&#10;user (references型, NOT NULL, 外部キー)&#10;To_do_list (references型, NOT NULL, 外部キー)&#10;Favorite (references型, NOT NULL, 外部キー)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;container=0;" vertex="1" parent="_hvI1dxnZSOt8kmgRSOM-11">
                     <mxGeometry y="26" width="290" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="_hvI1dxnZSOt8kmgRSOM-23" value="name (string型, NOT NULL)&#10;introduction (text型, NOT NULL)&#10;category_id (integer型, NOT NULL)&#10;user (references型, NOT NULL, 外部キー)&#10;To_do_list (references型, NOT NULL, 外部キー)&#10;Favorite (references型, NOT NULL, 外部キー)" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;container=0;" parent="_hvI1dxnZSOt8kmgRSOM-11" vertex="1">
+                    <mxGeometry y="130" width="290" height="104" as="geometry"/>
                 </mxCell>
                 <mxCell id="_hvI1dxnZSOt8kmgRSOM-12" value="To_do_lists テーブル" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;container=0;" parent="1mbG-d1cchTlGY6Ax2Pe-0" vertex="1">
                     <mxGeometry y="680" width="300" height="140" as="geometry"/>
