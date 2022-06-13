@@ -70,10 +70,20 @@
   - 質疑応答機能（記述ではなく、選択肢を作る予定です。）
   - 条件分岐を利用し、質問に対する回答からその人に合った種目を選択する機能
 
+#　データベース設計
+***
+
+[![Image from Gyazo](https://i.gyazo.com/3bcedf1627be93e31c6d5d8019e2b059.png)](https://gyazo.com/3bcedf1627be93e31c6d5d8019e2b059)
+
+# 画面遷移図
+***
+
+[![Image from Gyazo](https://i.gyazo.com/89a2d139b6d3458867484429aa7d19e9.png)](https://gyazo.com/89a2d139b6d3458867484429aa7d19e9)
+
 # テーブル設計
 ***
 
-## Users テーブル
+### Users テーブル
 
   |  Column           |  Type      | Option    |
   |------------        |--------    |--------   |
@@ -86,7 +96,7 @@
   |first_name_katakana          |string      |null:false |
   |birthday            |date    |null:false|
   
-  ## Association
+  #### Association
   - has_many :information
   - has_many :To_do_lists
   - has_many :Favorites
@@ -105,7 +115,7 @@
 6.お名前カナ(全角)
 7.生年月日  -->
 
-## Columns テーブル
+### Columns テーブル
 
   |  Column         |  Type     | Option    |
   |------------     |--------   |--------   |
@@ -117,7 +127,7 @@
   |favorite         |references | null: false, foreign_key: true |
   
 
-  ## Association
+  #### Association
   - belongs_to :user
   - has many :favorites
   - has many :to
@@ -129,7 +139,7 @@
 4.ユーザー名
 -->
 
-## To do lists テーブル
+### To do lists テーブル
 
   |  Column     |Type    | Option    |
   |------------ |--------|--------   |
@@ -140,7 +150,7 @@
   |user         |references | null: false, foreign_key: true |
   |information  |references | null: false, foreign_key: true |
   
-  ## Association
+  #### Association
   - belongs_to :user
 
 <!-- 
@@ -152,7 +162,7 @@
 5. 気になる部位
  -->
 
-   ## tweets テーブル
+   ### tweets テーブル
 
   |  Column         |  Type     | Option    |
   |------------     |--------   |--------   |
@@ -161,7 +171,7 @@
   |user             |references | null: false, foreign_key: true |
   |comment          |references | null: false, foreign_key: true |
  
-  ## Association
+  #### Association
   - belongs_to :user
   - has_many :tweets
   <!--
@@ -171,7 +181,7 @@
   3. コメント内容
   -->
 
- ## Comments テーブル
+ ### Comments テーブル
 
   |  Column         |  Type     | Option    |
   |------------     |--------   |--------   |
@@ -180,7 +190,7 @@
   |user             |references | null: false, foreign_key: true |
   |tweet            |references | null: false, foreign_key: true |
  
-  ## Association
+  #### Association
   - belongs_to :user
   - belongs_to :tweets
   
@@ -190,7 +200,7 @@
   2. コメント内容
   -->
 
-## Favorites テーブル
+### Favorites テーブル
 
   |  Column        |Type    | Option    |
   |------------    |--------|--------   |
@@ -199,7 +209,7 @@
   |information     | references | null: false, foreign_key: true |
   |Menu            | references | null: false, foreign_key: true |
 
-  ## Association
+  #### Association
   - belongs_to :user
   - belongs_to :information
   - belongs_to :menu
@@ -211,7 +221,7 @@
   3. Menuからお気に入り登録された種目の情報
   -->
 
-## Menus テーブル
+### Menus テーブル
 
   |  Column        |Type    | Option    |
   |------------    |--------|--------   |
@@ -219,7 +229,7 @@
   |detail          |text    |null:false |
   |user            | references | null: false, foreign_key: true |
 
-  ## Association
+  #### Association
   - belongs_to :user
   - has many :favorite
   
