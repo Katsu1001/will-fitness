@@ -113,7 +113,7 @@
     https://jungle-armadillo-6a4.notion.site/Errors-9c2fb37bd09c42dda906272bad9f6dda
   ***
   [![Image from Gyazo](https://i.gyazo.com/a9d8e59c811875dabee0398f2ed61d7e.gif)](https://gyazo.com/a9d8e59c811875dabee0398f2ed61d7e)
-    ***
+  ***
   
   2. タスク管理
   - コードを書く前に、「緊急性の高さ（高い・低い）、重要度（高い・低い）、難易度（難しい・簡単）」の3つの要素を考慮し、実装する機能の優先順位を決めからタスク管理することで、より円滑にアプリを作成できるようにしました。
@@ -121,7 +121,7 @@
     https://jungle-armadillo-6a4.notion.site/174ab696057040fbb343d632fb73ca92
   ***
   [![Image from Gyazo](https://i.gyazo.com/8a1f6b03402c028e212602537b71c8e8.gif)](https://gyazo.com/8a1f6b03402c028e212602537b71c8e8)
-    ***
+  ***
 
   3. JavaScriptのjQueryライブラリの利用
    - 目標管理機能とカレンダー機能、トレーニング内容や体重のデータをグラフ化する機能は、主にHTML, CSS, JavaScriptのjQueryライブラリを用いて実装しました。
