@@ -24,7 +24,7 @@ class ColumnsController < ApplicationController
     @comments = @column.comments.includes(:user)
     @comment = Comment.new
   end
-
+  
   def edit
   end
 

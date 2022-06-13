@@ -188,18 +188,15 @@ var mychart = new Chart(ctx, {
         labels: [
             '体脂肪量',
             '筋肉量',
-            '水分量',
         ],
         datasets: [{
             data: [
-                12,
+                8,
                 77,
-                15,
             ],
             backgroundColor: [
-                'rgba(241, 107, 141, 1)',
-                'rgba( 31, 167, 165, 1)',
                 'rgba(249, 199,  83, 1)',
+                'rgba(241, 107, 141, 1)',
             ]
         }]
     },
@@ -289,3 +286,97 @@ var ctx = $('#Body');
 </script>
 
 <!-- body weight -->
+
+<script>
+
+var gdata = [0,0,0,0,0,0,0,0,0,0,0];
+
+var config = {
+type: 'line',
+data: {
+labels: ['-', 'day1', 'day2', 'day3', 'day4', 'day5', 'day6', 'day7', 'day8', 'day9', 'day10'],
+datasets: [{
+label: "sample",
+fill: false,
+backgroundColor: "#3A7AC9",
+borderWidth: 2,
+borderColor: "#00f",
+pointBorderColor: "#c3f",
+tension: 0,
+data: []
+}]
+}
+};
+
+window.onload = function() {
+drawData(gdata);
+}
+
+function drawData(data) {
+config.data.datasets[0].data = data;
+var can2d = document.getElementById("can").getContext("2d");
+new Chart(can2d, config);
+
+}
+
+function input() {
+var day = document.getElementById('day').selectedIndex;
+if (day==0) return;
+var tate = document.getElementById('tate').selectedIndex;
+gdata[day] = tate;
+drawData(gdata);
+
+}
+
+</script>
+
+<body>
+
+横軸：日付（一部省略）
+
+<form name="dd" method="post">
+<select id="day">
+<option value="">--</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+</select>
+日<br>
+</form>
+
+
+縦軸：数値
+
+<form id="suuchi" method="post">
+<select id="tate">
+<option value="0">0</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+</select>
+</form>
+<input type = "button" id="button1" value = "入力" onclick="input();">
+
+<canvas id="can" ></canvas>
+
+</body>
+
+<script>
+var tate = document.getElementById('tate').selectedIndex;
+var tate2 = document.getElementById('tate2').selectedIndex;
+var tate3 = document.getElementById('tate3').selectedIndex;
+gdata[day] = tate + 0.1*tate2 + 0.01*tate3;
+</script>
