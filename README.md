@@ -88,5 +88,5 @@
 
 # 画面遷移図
 ***
-  [![Image from Gyazo](https://i.gyazo.com/89a2d139b6d3458867484429aa7d19e9.png)](https://gyazo.com/89a2d139b6d3458867484429aa7d19e9)
+  [![Image from Gyazo](https://i.gyazo.com/1a3bfa7f282a3f270933606b3507bcef.png)](https://gyazo.com/1a3bfa7f282a3f270933606b3507bcef)
 
