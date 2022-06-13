@@ -97,11 +97,11 @@
   - 質疑応答機能（記述ではなく、選択肢を作る予定です。）
   - 条件分岐を利用し、質問に対する回答からその人に合った種目を選択する機能
 
-# データベース設計
+## データベース設計
 ***
   [![Image from Gyazo](https://i.gyazo.com/19c32d0775bfd5600e79112b23ce9787.png)](https://gyazo.com/19c32d0775bfd5600e79112b23ce9787)
 
-# 画面遷移図
+## 画面遷移図
 ***
   [![Image from Gyazo](https://i.gyazo.com/1a3bfa7f282a3f270933606b3507bcef.png)](https://gyazo.com/1a3bfa7f282a3f270933606b3507bcef)
 
