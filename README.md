@@ -24,7 +24,8 @@
 
 ### トップページ
 ***
-  [![Image from Gyazo](https://i.gyazo.com/2ed59f14a909fa3839e4b6690e072e2b.gif)](https://gyazo.com/2ed59f14a909fa3839e4b6690e072e2b)
+  [![Image from Gyazo](https://i.gyazo.com/dd93e6161cdb75af26ea387dc53ac0b1.gif)](https://gyazo.com/dd93e6161cdb75af26ea387dc53ac0b1)
+  ***
 
 ## 実装した機能
 ***
