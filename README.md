@@ -25,7 +25,7 @@
 ## 実装した機能
 ***
   #### トップページ
-   [![Image from Gyazo](https://i.gyazo.com/29cebf9b1807d6a31aeab5e592b2f163.gif)](https://gyazo.com/29cebf9b1807d6a31aeab5e592b2f163)
+   [![Image from Gyazo](https://i.gyazo.com/32ab57bc619cce7dca8b24e71c66eec9.gif)](https://gyazo.com/32ab57bc619cce7dca8b24e71c66eec9)
    ***
 
   1. ユーザー管理機能
