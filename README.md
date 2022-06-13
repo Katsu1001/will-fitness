@@ -51,6 +51,8 @@
 
   3. 新規登録・ログインページ以外の全てのページからページからSNS(Twitter, Facebook, Instagram, YouTube)へ遷移できる機能
   - (ex.トップページや記事を投稿・編集する画面、カレンダー画面など)
+    [![Image from Gyazo](https://i.gyazo.com/fe07bf7b36280dee436cf9e315414709.gif)](https://gyazo.com/fe07bf7b36280dee436cf9e315414709)
+    ***
 
   4. 目標管理機能
   - 投稿機能
