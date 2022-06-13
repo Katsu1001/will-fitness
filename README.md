@@ -16,7 +16,7 @@
   http://will-fitness.herokuapp.com/
 
 ### テスト用アカウント
-
+***
   - Basic認証ID: kura
   - Basic認証パスワード: 1001
   - メールアドレス: sample@ne.jp
@@ -24,8 +24,9 @@
 
 ### トップページ
 ***
+
   [![Image from Gyazo](https://i.gyazo.com/d0287eec16c6e4566b75156d87a65f17.gif)](https://gyazo.com/d0287eec16c6e4566b75156d87a65f17)
-  
+
 ## 実装した機能
 ***
 
