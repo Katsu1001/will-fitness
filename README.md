@@ -112,7 +112,7 @@
   ***
     https://jungle-armadillo-6a4.notion.site/Errors-9c2fb37bd09c42dda906272bad9f6dda
   ***
-  [![Image from Gyazo](https://i.gyazo.com/a9d8e59c811875dabee0398f2ed61d7e.gif)](https://gyazo.com/a9d8e59c811875dabee0398f2ed61d7e)
+  [![Image from Gyazo](https://i.gyazo.com/dc7e18f4ae34aef4024672c1b0d073d5.gif)](https://gyazo.com/dc7e18f4ae34aef4024672c1b0d073d5)
   ***
   
   2. タスク管理
